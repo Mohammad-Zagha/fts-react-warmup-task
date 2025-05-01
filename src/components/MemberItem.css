@@ -1,0 +1,66 @@
+.member-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #e8e8e8;
+  margin: 6px 0;
+  border-radius: 4px;
+}
+
+.member-info {
+  display: flex;
+  align-items: center;
+}
+
+.member-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  color: #666;
+}
+
+.user-icon::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+  background-size: contain;
+}
+.member-name.dimmed {
+  color: #aaa;
+}
+.member-name {
+  font-size: 14px;
+  color: #333;
+}
+
+.selection-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.selection-indicator.selected {
+  border-color: rgb(143, 201, 84);
+  background-color: transparent;
+}
+
+.selection-indicator.selected .checkmark::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  font-weight: bold;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236bc253' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+  background-size: contain;
+}

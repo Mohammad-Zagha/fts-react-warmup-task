@@ -1,0 +1,27 @@
+.button {
+  min-width: 120px;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.button.primary {
+  background: linear-gradient(to right, #6cb5ff, #788aff);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(120, 138, 255, 0.4);
+}
+
+.button.primary:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  opacity: 0.95;
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: #dadce3;
+  border: 1px solid #f6f6f9;
+}
